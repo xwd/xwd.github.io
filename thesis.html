@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body.ex1 {
+  font-size:14pt;  
+  text-align:justify;
+  background-color:white;
+}
+hr {
+  border: 0;
+  width: 70%;
+}
+img.w3c {
+  float:left;
+  border:none;
+}
+img {
+  float:right;
+  border:none;
+}
+p.footer {
+  font-size:9pt
+}
+hr.footer {
+  border: none;
+  border-top: dashed 1px #00CC33;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+div.inner {
+  width:750px;
+  padding-top:0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:white;
+}
+a {
+  text-decoration:none; color:#005A9C; 
+}
+span.name {
+  color:black;
+}
+div.hr { 
+  width: 100%; 
+  height: 1px; 
+  border: 0; 
+  background-color: gray; 
+  margin-top: 5px; 
+} 
+li.pub {
+  margin-bottom: 10px
+}
+</style>
+
+<title>Wenduan Xu</title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31571478-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body class="ex1">
+<br/><br/>
+<div class="inner">
+<header>
+<h2>Thesis</h2>
+</header>
+My thesis focused on structured prediction methods for models including recurrent neural networks, with the unifying theme of integrating structured learning with inexact search. As one contribution, I developed a reinforcement learning-style learning algorithm &#8211 with applicability beyond parsing (as shown in <a href="https://arxiv.org/abs/1711.04956">Edunov et al., 2018</a>) &#8211 along with the first neural network parsing model optimized for the final evaluation metric with a structure-level loss. This is also the first work that used beam search to enable the learning of non-locally-normalized RNN models that condition on the full input, and the first work to do so with an expected loss. It demonstrates label bias is present even with models that exploit unbounded lookahead, and that global normalization is a strategy for mitigating its negative effects. As good side effects, the model also mitigates exposure bias and loss-evaluation mismatch.
+<br/><br/>
+As another contribution, I solved a long-standing problem in CCG parsing by developing the first dependency model for a shift-reduce parser, in which the key components are a dependency oracle and a learning algorithm that integrates the dependency oracle, the violation-fixing structured perceptron, and beam search. The dependency oracle is also a general hypergraph search <a href="papers/dep-oracle.pdf">algorithm</a> with other potential applications. 
+<br/><br/>
+<br/><br/>
+<center><a href = './index.html'>back</a></center>
+<br/><br/>
+<br/><br/> 
+</div>
+</body>
+<br/><br/><br/><br/><br/>
+</html>
+
